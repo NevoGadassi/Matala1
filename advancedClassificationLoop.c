@@ -52,7 +52,7 @@ int isPalindrome(int n)
 
 int isArmstrong(int n)
 {
-
+    int original=n;
     int lenght = countnum(n);
     int spiritn[lenght];
     int sum = 0;
@@ -69,7 +69,7 @@ int isArmstrong(int n)
         sum += power(spiritn[i], lenght);
     }
 
-    if(sum == n ){
+    if(sum == original ){
         return 1;
     }
     return 0;
